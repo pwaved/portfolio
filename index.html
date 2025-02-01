@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlon</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <button id="hamburgerButton" aria-label="Menu">
+        <span class="hamburger-icon">☰</span>
+      </button>
+        <ul id="navMenu">
+          <li><a href="#banner">Banner</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="scroll-progress"></div>
+    <section id="banner" class="banner">
+      <div id="particles-js"></div>  
+      <h1 style="margin-bottom: 33px;">Marlon Stein Vargas</h1>
+      <img src="images/1718296302808.jpg" class="profile-img">
+    </section>
+    <section id="sobre" class="sobre">
+        <h2>Sobre</h2>
+        <p>Olá, meu nome é Marlon, sou desenvolvedor web, tenho 20 anos e estou cursando Análise e Desenvolvimento de Sistemas. Atualmente estou estudando HTML, CSS, JavaScript, PHP e MySQL.</p>
+        <p>Clique no link abaixo para baixar meu currículo atualizado.</p>
+        <a href="docs/Curriculo-Marlon.pdf" download class="btn-download">
+          <i class="fas fa-download"></i>
+          Baixar Currículo PDF
+        </a>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+            <div class="projeto accordion">
+              <div
+                class="accordion-header"
+                style="background-image: url('images/406223355-b2e9286e-600d-481a-a0ad-60e60af24ea7.PNG');"
+                onclick="toggleAccordion(this)"
+              >
+                <h3 class="accordion-title">Locadora De Veículos</h3>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Projeto em desenvolvimento utilizando HTML,CSS e JavaScript, confira mais detalhes do projeto no link abaixo.
+                    <a href="https://github.com/pwaved/Betterthxn">https://github.com/pwaved/Betterthxn</a>
+                </p>
+              </div>
+            </div>
+            <div class="projeto accordion">
+                <div
+                  class="accordion-header"
+                  style="background-image: url(images/1_pVxCmIW9kV28plnkC9mpMA.jpg);"
+                  onclick="toggleAccordion(this)"
+                >
+                  <h3 class="accordion-title">Work in Progress</h3>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Projeto em desenvolvimento.
+                  </p>
+                </div>
+              </div>
+              <div class="projeto accordion">
+                <div
+                  class="accordion-header"
+                  style="background-image: url(images/1_pVxCmIW9kV28plnkC9mpMA.jpg);"
+                  onclick="toggleAccordion(this)"
+                >
+                  <h3 class="accordion-title">Work in Progress</h3>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Projeto em desenvolvimento.
+                  </p>
+                </div>
+              </div>
+    </section>
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/mqaebzba" method="post" class="fillform">
+            <input type="text" placeholder="Nome" class="inputform" name="Nome" required>
+            <input type="email" placeholder="E-mail" class="inputform" name="email" required>
+            <textarea placeholder="Mensagem" class="inputform" name="Mensagem" required></textarea>
+            <input type="text" name="_honey" style="display:none;">
+            <button type="submit" id="lilbutton">Enviar</button>
+        </form>
+    </section>
+    <footer>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/marlon-vargas-917618223/" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/pwaved" target="_blank" class="social-icon github">
+                <i class="fab fa-github"></i>
+              </a>
+              <p>Marlon &copy; 2025</p>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
