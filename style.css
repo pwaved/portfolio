@@ -92,7 +92,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     flex-direction: column;
 }
 
@@ -101,7 +100,6 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 30vh;
     background-color: #382F3C;
 }
 
